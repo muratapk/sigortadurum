@@ -77,6 +77,23 @@ namespace sigortadurum
 
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                Hasta hastam1 = (Hasta)dataGridView1.SelectedRows[0].DataBoundItem;
+                hastam1.AdSoyad = textBox1.Text;
+                hastam1.Tarih = dateTimePicker1.Value;
+                hastam1.Birim=comboBox1.Text;
+                hastam1.yas =Convert.ToInt16(numericUpDown1.Value);
+                dataGridView1.Refresh();
+                MessageBox.Show("Kayıt Güncellendi");
+
+
+            }
+
+        }
     }
    
 }
