@@ -74,6 +74,7 @@ namespace sigortadurum
                 comboBox1.Text=hastam1.Birim;
                 numericUpDown1.Value = hastam1.yas;
 
+
             }
         }
     }
